@@ -1,0 +1,1631 @@
+ rm -rf builddir
+cmake -B builddir -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH=$QT_ROOT
+cmake --build builddir --config Release
+-- Found Git: /usr/bin/git (found version "2.43.0")
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Project version: 2.0.0 (v2.0.0-alpha.0+149.9f2d33f504d2)
+-- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1")
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found Gettext: /usr/bin/msgmerge (found version "0.21")
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter
+-- Locales: af_ZA ar ca de el en en_GB es fa fr gl he hi hu id it ja ko nb_NO mk nl pl pt pt_BR ru sv th tr uk vi zh_CN zh_TW
+-- Looking for mlock
+-- Looking for mlock - found
+-- CPM: Adding package nlohmann_json@3.12.1 (230bfd15a2bb7f01ebb3fcd3cf898b697ef43c48)
+-- Using the multi-header code from /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/nlohmann_json-src/include/
+-- Implicit conversions are disabled (JSON_USE_IMPLICIT_CONVERSIONS=0)
+-- CPM: Adding package clap@1.2.6 (69a69252fdd6ac1d06e246d9a04c0a89d9607a17)
+-- CLAP version: 1.2.6
+-- CPM: Adding package clap-helpers@0.2 (3625679b5b32c2032df4134cae68cae0faa2ec36)
+-- CPM: Adding package juce@8.0.10 (3af3ce009f6a02f6fa651008fffb5b41743a9fab)
+-- Checking for module 'alsa'
+--   Found alsa, version 1.2.11
+-- Checking for modules 'freetype2;fontconfig'
+--   Found freetype2, version 26.1.20
+--   Found fontconfig, version 2.15.0
+-- Checking for module 'gl'
+--   Found gl, version 1.2
+-- CPM: Adding package MbedTLS@3.6.3 (22098d41c6620ce07cf8a0134d37302355e1e5ef)
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- USING O3
+-- CPM: Adding package curl@8.13.0 (1c3149881769e7bd79b072e48374e4c2b3678b2f)
+-- Using CMake version 3.28.3
+-- curl version=[8.13.0-DEV]
+-- CMake platform flags: UNIX GCC
+-- Picky compiler options: -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion
+-- Found Perl: /usr/bin/perl (found version "5.38.2")
+-- Looking for connect in socket
+-- Looking for connect in socket - not found
+-- Performing Test HAVE_SOCKADDR_IN6_SIN6_SCOPE_ID
+-- Performing Test HAVE_SOCKADDR_IN6_SIN6_SCOPE_ID - Success
+-- Performing Test HAVE_SOCKADDR_IN6_SIN6_ADDR
+-- Performing Test HAVE_SOCKADDR_IN6_SIN6_ADDR - Success
+-- Performing Test USE_UNIX_SOCKETS
+-- Performing Test USE_UNIX_SOCKETS - Success
+-- Found CA bundle: /etc/ssl/certs/ca-certificates.crt
+-- Found CA path: /etc/ssl/certs
+-- Looking for sys/eventfd.h
+-- Looking for sys/eventfd.h - found
+-- Looking for sys/filio.h
+-- Looking for sys/filio.h - not found
+-- Looking for sys/ioctl.h
+-- Looking for sys/ioctl.h - found
+-- Looking for sys/param.h
+-- Looking for sys/param.h - found
+-- Looking for sys/poll.h
+-- Looking for sys/poll.h - found
+-- Looking for sys/resource.h
+-- Looking for sys/resource.h - found
+-- Looking for include file sys/select.h
+-- Looking for include file sys/select.h - found
+-- Looking for include files sys/select.h, sys/socket.h
+-- Looking for include files sys/select.h, sys/socket.h - found
+-- Looking for sys/sockio.h
+-- Looking for sys/sockio.h - not found
+-- Looking for sys/stat.h
+-- Looking for sys/stat.h - found
+-- Looking for 3 include files sys/select.h, ..., sys/time.h
+-- Looking for 3 include files sys/select.h, ..., sys/time.h - found
+-- Looking for 4 include files sys/select.h, ..., sys/types.h
+-- Looking for 4 include files sys/select.h, ..., sys/types.h - found
+-- Looking for sys/un.h
+-- Looking for sys/un.h - found
+-- Looking for 5 include files sys/select.h, ..., sys/utime.h
+-- Looking for 5 include files sys/select.h, ..., sys/utime.h - not found
+-- Looking for 5 include files sys/select.h, ..., arpa/inet.h
+-- Looking for 5 include files sys/select.h, ..., arpa/inet.h - found
+-- Looking for dirent.h
+-- Looking for dirent.h - found
+-- Looking for fcntl.h
+-- Looking for fcntl.h - found
+-- Looking for 6 include files sys/select.h, ..., ifaddrs.h
+-- Looking for 6 include files sys/select.h, ..., ifaddrs.h - found
+-- Looking for io.h
+-- Looking for io.h - not found
+-- Looking for 7 include files sys/select.h, ..., libgen.h
+-- Looking for 7 include files sys/select.h, ..., libgen.h - found
+-- Looking for linux/tcp.h
+-- Looking for linux/tcp.h - found
+-- Looking for locale.h
+-- Looking for locale.h - found
+-- Looking for 8 include files sys/select.h, ..., net/if.h
+-- Looking for 8 include files sys/select.h, ..., net/if.h - found
+-- Looking for 9 include files sys/select.h, ..., netdb.h
+-- Looking for 9 include files sys/select.h, ..., netdb.h - found
+-- Looking for 10 include files sys/select.h, ..., netinet/in.h
+-- Looking for 10 include files sys/select.h, ..., netinet/in.h - found
+-- Looking for netinet/in6.h
+-- Looking for netinet/in6.h - not found
+-- Looking for 11 include files sys/select.h, ..., netinet/tcp.h
+-- Looking for 11 include files sys/select.h, ..., netinet/tcp.h - found
+-- Looking for 12 include files sys/select.h, ..., netinet/udp.h
+-- Looking for 12 include files sys/select.h, ..., netinet/udp.h - found
+-- Looking for poll.h
+-- Looking for poll.h - found
+-- Looking for pwd.h
+-- Looking for pwd.h - found
+-- Looking for stdatomic.h
+-- Looking for stdatomic.h - found
+-- Looking for stdbool.h
+-- Looking for stdbool.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for strings.h
+-- Looking for strings.h - found
+-- Looking for stropts.h
+-- Looking for stropts.h - not found
+-- Looking for termio.h
+-- Looking for termio.h - found
+-- Looking for termios.h
+-- Looking for termios.h - found
+-- Looking for 13 include files sys/select.h, ..., unistd.h
+-- Looking for 13 include files sys/select.h, ..., unistd.h - found
+-- Looking for utime.h
+-- Looking for utime.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of size_t
+-- Check size of size_t - done
+-- Check size of ssize_t
+-- Check size of ssize_t - done
+-- Check size of long long
+-- Check size of long long - done
+-- Check size of long
+-- Check size of long - done
+-- Check size of int
+-- Check size of int - done
+-- Check size of __int64
+-- Check size of __int64 - failed
+-- Check size of time_t
+-- Check size of time_t - done
+-- Check size of suseconds_t
+-- Check size of suseconds_t - done
+-- Looking for fnmatch
+-- Looking for fnmatch - found
+-- Looking for basename
+-- Looking for basename - found
+-- Looking for opendir
+-- Looking for opendir - found
+-- Looking for poll
+-- Looking for poll - found
+-- Looking for socket
+-- Looking for socket - found
+-- Looking for socketpair
+-- Looking for socketpair - found
+-- Looking for recv
+-- Looking for recv - found
+-- Looking for send
+-- Looking for send - found
+-- Looking for sendmsg
+-- Looking for sendmsg - found
+-- Looking for sendmmsg
+-- Looking for sendmmsg - found
+-- Looking for select
+-- Looking for select - found
+-- Looking for strdup
+-- Looking for strdup - found
+-- Looking for memrchr
+-- Looking for memrchr - found
+-- Looking for alarm
+-- Looking for alarm - found
+-- Looking for fcntl
+-- Looking for fcntl - found
+-- Looking for getppid
+-- Looking for getppid - found
+-- Looking for utimes
+-- Looking for utimes - found
+-- Looking for gettimeofday
+-- Looking for gettimeofday - found
+-- Looking for closesocket
+-- Looking for closesocket - not found
+-- Looking for sigsetjmp
+-- Looking for sigsetjmp - found
+-- Looking for getpass_r
+-- Looking for getpass_r - not found
+-- Looking for getpwuid
+-- Looking for getpwuid - found
+-- Looking for getpwuid_r
+-- Looking for getpwuid_r - found
+-- Looking for geteuid
+-- Looking for geteuid - found
+-- Looking for utime
+-- Looking for utime - found
+-- Looking for gmtime_r
+-- Looking for gmtime_r - found
+-- Looking for gethostbyname_r
+-- Looking for gethostbyname_r - found
+-- Looking for gethostname
+-- Looking for gethostname - found
+-- Looking for signal
+-- Looking for signal - found
+-- Looking for strerror_r
+-- Looking for strerror_r - found
+-- Looking for sigaction
+-- Looking for sigaction - found
+-- Looking for siginterrupt
+-- Looking for siginterrupt - found
+-- Looking for getaddrinfo
+-- Looking for getaddrinfo - found
+-- Looking for getifaddrs
+-- Looking for getifaddrs - found
+-- Looking for freeaddrinfo
+-- Looking for freeaddrinfo - found
+-- Looking for pipe
+-- Looking for pipe - found
+-- Looking for eventfd
+-- Looking for eventfd - found
+-- Looking for ftruncate
+-- Looking for ftruncate - found
+-- Looking for getpeername
+-- Looking for getpeername - found
+-- Looking for getsockname
+-- Looking for getsockname - found
+-- Looking for getrlimit
+-- Looking for getrlimit - found
+-- Looking for setlocale
+-- Looking for setlocale - found
+-- Looking for setrlimit
+-- Looking for setrlimit - found
+-- Looking for if_nametoindex
+-- Looking for if_nametoindex - found
+-- Looking for realpath
+-- Looking for realpath - found
+-- Looking for sched_yield
+-- Looking for sched_yield - found
+-- Looking for strcasecmp
+-- Looking for strcasecmp - found
+-- Looking for stricmp
+-- Looking for stricmp - not found
+-- Looking for strcmpi
+-- Looking for strcmpi - not found
+-- Looking for setmode
+-- Looking for setmode - not found
+-- Looking for snprintf
+-- Looking for snprintf - found
+-- Looking for inet_ntop
+-- Looking for inet_ntop - found
+-- Looking for inet_pton
+-- Looking for inet_pton - found
+-- Looking for fsetxattr
+-- Looking for fsetxattr - found
+-- Performing Test HAVE_FSETXATTR_5
+-- Performing Test HAVE_FSETXATTR_5 - Success
+-- Performing Test HAVE_FSETXATTR_6
+-- Performing Test HAVE_FSETXATTR_6 - Failed
+-- Check size of sa_family_t
+-- Check size of sa_family_t - done
+-- Performing Test HAVE_FCNTL_O_NONBLOCK
+-- Performing Test HAVE_FCNTL_O_NONBLOCK - Success
+-- Performing Test HAVE_IOCTLSOCKET
+-- Performing Test HAVE_IOCTLSOCKET - Failed
+-- Performing Test HAVE_IOCTLSOCKET_CAMEL
+-- Performing Test HAVE_IOCTLSOCKET_CAMEL - Failed
+-- Performing Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO
+-- Performing Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO - Failed
+-- Performing Test HAVE_IOCTLSOCKET_FIONBIO
+-- Performing Test HAVE_IOCTLSOCKET_FIONBIO - Failed
+-- Performing Test HAVE_IOCTL_FIONBIO
+-- Performing Test HAVE_IOCTL_FIONBIO - Success
+-- Performing Test HAVE_IOCTL_SIOCGIFADDR
+-- Performing Test HAVE_IOCTL_SIOCGIFADDR - Success
+-- Performing Test HAVE_SETSOCKOPT_SO_NONBLOCK
+-- Performing Test HAVE_SETSOCKOPT_SO_NONBLOCK - Failed
+-- Performing Test HAVE_GETHOSTBYNAME_R_3
+-- Performing Test HAVE_GETHOSTBYNAME_R_3 - Failed
+-- Performing Test HAVE_GETHOSTBYNAME_R_5
+-- Performing Test HAVE_GETHOSTBYNAME_R_5 - Failed
+-- Performing Test HAVE_GETHOSTBYNAME_R_6
+-- Performing Test HAVE_GETHOSTBYNAME_R_6 - Success
+-- Performing Test HAVE_BOOL_T
+-- Performing Test HAVE_BOOL_T - Success
+-- Performing Test STDC_HEADERS
+-- Performing Test STDC_HEADERS - Success
+-- Performing Test HAVE_ATOMIC
+-- Performing Test HAVE_ATOMIC - Success
+-- Performing Test HAVE_GETHOSTBYNAME_R_3_REENTRANT
+-- Performing Test HAVE_GETHOSTBYNAME_R_3_REENTRANT - Failed
+-- Performing Test HAVE_GETHOSTBYNAME_R_5_REENTRANT
+-- Performing Test HAVE_GETHOSTBYNAME_R_5_REENTRANT - Failed
+-- Performing Test HAVE_GETHOSTBYNAME_R_6_REENTRANT
+-- Performing Test HAVE_GETHOSTBYNAME_R_6_REENTRANT - Success
+-- Performing Test HAVE_FILE_OFFSET_BITS
+-- Performing Test HAVE_FILE_OFFSET_BITS - Success
+-- Check size of off_t
+-- Check size of off_t - done
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Check size of curl_off_t
+-- Check size of curl_off_t - done
+-- Check size of curl_socket_t
+-- Check size of curl_socket_t - done
+-- Performing Test HAVE_WRITABLE_ARGV
+-- Performing Test HAVE_WRITABLE_ARGV - Success
+-- Performing Test HAVE_TIME_T_UNSIGNED
+-- Performing Test HAVE_TIME_T_UNSIGNED - Failed
+-- Performing Test HAVE_GLIBC_STRERROR_R
+-- Performing Test HAVE_GLIBC_STRERROR_R - Success
+-- Performing Test HAVE_POSIX_STRERROR_R
+-- Performing Test HAVE_POSIX_STRERROR_R - Failed
+-- Performing Test HAVE_CLOCK_GETTIME_MONOTONIC
+-- Performing Test HAVE_CLOCK_GETTIME_MONOTONIC - Success
+-- Check size of struct sockaddr_storage
+-- Check size of struct sockaddr_storage - done
+-- Performing Test HAVE_MSG_NOSIGNAL
+-- Performing Test HAVE_MSG_NOSIGNAL - Success
+-- Performing Test HAVE_STRUCT_TIMEVAL
+-- Performing Test HAVE_STRUCT_TIMEVAL - Success
+-- Performing Test HAVE_H_ERRNO
+-- Performing Test HAVE_H_ERRNO - Success
+-- Performing Test HAVE_CLOCK_GETTIME_MONOTONIC_RAW
+-- Performing Test HAVE_CLOCK_GETTIME_MONOTONIC_RAW - Success
+-- Protocols: http https ws wss
+-- Features: alt-svc AsynchDNS HSTS HTTPS-proxy IPv6 Largefile NTLM SSL threadsafe UnixSockets
+-- Enabled SSL backends: mbedTLS
+-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.13.2")
+-- Found Fontconfig: /usr/lib/x86_64-linux-gnu/libfontconfig.so (found version "2.15.0")
+CMake Deprecation Warning at ext/soxr/CMakeLists.txt:4 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at ext/soxr/CMakeLists.txt:6 (cmake_policy):
+  The OLD behavior for policy CMP0115 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+CMake Warning (dev) at /usr/share/cmake-3.28/Modules/CMakeDependentOption.cmake:89 (message):
+  Policy CMP0127 is not set: cmake_dependent_option() supports full Condition
+  Syntax.  Run "cmake --help-policy CMP0127" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  ext/soxr/CMakeLists.txt:74 (cmake_dependent_option)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Looking for pow in m
+-- Looking for pow in m - found
+-- Trying SIMD32 C flags:
+-- Performing Test DETECT_SIMD32_C_FLAGS
+-- Performing Test DETECT_SIMD32_C_FLAGS - Success
+-- Found SIMD32:
+-- Trying SIMD64 C flags: -mavx
+-- Performing Test DETECT_SIMD64_C_FLAGS
+-- Performing Test DETECT_SIMD64_C_FLAGS - Success
+-- Found SIMD64: -mavx
+-- Looking for lrint
+-- Looking for lrint - found
+CMake Warning (dev) at /usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:116 (message):
+  Policy CMP0075 is not set: Include file check macros honor
+  CMAKE_REQUIRED_LIBRARIES.  Run "cmake --help-policy CMP0075" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  CMAKE_REQUIRED_LIBRARIES is set to:
+
+    m;
+
+  For compatibility with CMake 3.11 and below this check is ignoring it.
+Call Stack (most recent call first):
+  ext/soxr/CMakeLists.txt:148 (check_include_files)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Looking for include file fenv.h
+-- Looking for include file fenv.h - found
+-- CPM: Adding package SndFile@1.2.2 (72f6af15e8f85157bd622ed45b979025828b7001)
+CMake Deprecation Warning at builddir/_deps/sndfile-src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at builddir/_deps/sndfile-src/CMakeLists.txt:14 (cmake_policy):
+  The OLD behavior for policy CMP0091 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+--
+--
+-- Checking large files support...
+--
+--
+-- Checking size of off_t without any definitions:
+-- Checking of off_t without any definitions: 8
+--
+-- Result of checking large files support: supported
+
+
+-- Found ALSA: /usr/lib/x86_64-linux-gnu/libasound.so (found version "1.2.15")
+-- Found Ogg: /usr/lib/x86_64-linux-gnu/libogg.so (found suitable version "1.3.5", minimum required is "1.3")
+-- Found Vorbis: /usr/lib/x86_64-linux-gnu/libvorbis.so (found version "1.3.7") found components: Enc
+-- Found FLAC: /usr/lib/x86_64-linux-gnu/libFLAC.so (found version "1.4.3")
+-- Found Opus: /usr/lib/x86_64-linux-gnu/libopus.so (found version "1.4")
+-- Could NOT find mp3lame (missing: MP3LAME_LIBRARY MP3LAME_INCLUDE_DIR)
+-- Found mpg123: /usr/lib/x86_64-linux-gnu/libmpg123.so (found suitable version "1.32.5", minimum required is "1.25.10")
+-- Could NOT find Speex (missing: SPEEX_LIBRARY SPEEX_INCLUDE_DIR)
+-- Could NOT find SQLite3 (missing: SQLite3_INCLUDE_DIR SQLite3_LIBRARY)
+-- Looking for byteswap.h
+-- Looking for byteswap.h - found
+-- Looking for dlfcn.h
+-- Looking for dlfcn.h - found
+-- Looking for direct.h
+-- Looking for direct.h - not found
+-- Looking for endian.h
+-- Looking for endian.h - found
+-- Looking for inttypes.h
+-- Looking for inttypes.h - found
+-- Looking for immintrin.h
+-- Looking for immintrin.h - found
+-- Check CPU architecture is x86
+-- Check CPU architecture is x86 - no
+-- Check CPU architecture is x64
+-- Check CPU architecture is x64 - yes
+-- Check size of int64_t
+-- Check size of int64_t - done
+-- Check size of wchar_t
+-- Check size of wchar_t - done
+-- Looking for floor in m
+-- Looking for floor in m - found
+-- Looking for sqlite3_close in sqlite3
+-- Looking for sqlite3_close in sqlite3 - not found
+-- Looking for fstat
+-- Looking for fstat - found
+-- Looking for fstat64
+-- Looking for fstat64 - found
+-- Looking for gmtime
+-- Looking for gmtime - found
+-- Looking for localtime
+-- Looking for localtime - found
+-- Looking for localtime_r
+-- Looking for localtime_r - found
+-- Looking for lseek
+-- Looking for lseek - found
+-- Looking for open
+-- Looking for open - found
+-- Looking for read
+-- Looking for read - found
+-- Looking for write
+-- Looking for write - found
+-- Looking for lrintf
+-- Looking for lrintf - found
+-- Looking for fsync
+-- Looking for fsync - found
+-- Looking for S_IRGRP
+-- Looking for S_IRGRP - found
+-- Checking for inline...
+-- Checking for inline... supported
+-- Checking processor clipping capabilities...
+-- Checking processor clipping capabilities... none
+-- The following features have been enabled:
+
+ * ENABLE_EXTERNAL_LIBS, enable FLAC, Vorbis, and Opus codecs
+
+-- The following OPTIONAL packages have been found:
+
+ * Gettext
+ * Python3
+ * Perl
+ * SIMD32
+ * SIMD64
+ * ALSA
+
+-- The following RECOMMENDED packages have been found:
+
+ * Vorbis, open source lossy audio codec, <www.vorbis.com/>
+   Enables Vorbis support
+ * FLAC, Free Lossless Audio Codec Library, <www.xiph.org/flac/>
+   Enables FLAC support
+ * Opus, Standardized open source low-latency fullband codec, <www.opus-codec.org/>
+   Enables experimental Opus support
+ * mpg123 (required version >= 1.25.10), MPEG Audio Layer I/II/III decoder, <https://www.mpg123.de/>
+   Enables MPEG Audio reading support
+
+-- The following REQUIRED packages have been found:
+
+ * Threads
+ * MbedTLS
+ * Freetype
+ * Fontconfig
+ * PkgConfig
+
+-- The following features have been disabled:
+
+ * BUILD_SHARED_LIBS, build shared libraries
+ * ENABLE_MPEG, enable MPEG audio (including mp3) codecs
+ * ENABLE_EXPERIMENTAL, enable experimental code
+ * BUILD_TESTING, build tests
+ * BUILD_REGTEST, build regtest
+ * ENABLE_CPACK, enable CPack support
+ * ENABLE_CPU_CLIP, Enable tricky cpu specific clipper
+ * ENABLE_BOW_DOCS, enable black-on-white html docs
+ * ENABLE_PACKAGE_CONFIG, generate and install package config file
+ * INSTALL_PKGCONFIG_MODULE, generate and install pkg-config module
+ * INSTALL_MANPAGES, install man pages for programs
+
+-- The following OPTIONAL packages have not been found:
+
+ * Speex, an audio codec tuned for speech, <www.speex.org/>
+   Enables experemental Speex support
+ * SQLite3, light weight SQL database engine., <www.sqlite.org/>
+   Enables regtest
+
+-- The following RECOMMENDED packages have not been found:
+
+ * mp3lame, High quality MPEG Audio Layer III (MP3) encoder, <https://lame.sourceforge.io/>
+   Enables MPEG layer III (MP3) writing support
+
+-- Checking for module 'libchromaprint'
+--   Package 'libchromaprint', required by 'virtual:world', not found
+-- CPM: Adding package zstd@1.5.7 (f8745da6ff1ad1e7bab384bd1f9d742439278e99)
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/cc
+-- ZSTD VERSION: 1.5.7
+-- Performing Test C_FLAG_WALL
+-- Performing Test C_FLAG_WALL - Success
+-- Performing Test CXX_FLAG_WALL
+-- Performing Test CXX_FLAG_WALL - Success
+-- Performing Test C_FLAG_WEXTRA
+-- Performing Test C_FLAG_WEXTRA - Success
+-- Performing Test CXX_FLAG_WEXTRA
+-- Performing Test CXX_FLAG_WEXTRA - Success
+-- Performing Test C_FLAG_WUNDEF
+-- Performing Test C_FLAG_WUNDEF - Success
+-- Performing Test CXX_FLAG_WUNDEF
+-- Performing Test CXX_FLAG_WUNDEF - Success
+-- Performing Test C_FLAG_WSHADOW
+-- Performing Test C_FLAG_WSHADOW - Success
+-- Performing Test CXX_FLAG_WSHADOW
+-- Performing Test CXX_FLAG_WSHADOW - Success
+-- Performing Test C_FLAG_WCAST_ALIGN
+-- Performing Test C_FLAG_WCAST_ALIGN - Success
+-- Performing Test CXX_FLAG_WCAST_ALIGN
+-- Performing Test CXX_FLAG_WCAST_ALIGN - Success
+-- Performing Test C_FLAG_WCAST_QUAL
+-- Performing Test C_FLAG_WCAST_QUAL - Success
+-- Performing Test CXX_FLAG_WCAST_QUAL
+-- Performing Test CXX_FLAG_WCAST_QUAL - Success
+-- Performing Test C_FLAG_WSTRICT_PROTOTYPES
+-- Performing Test C_FLAG_WSTRICT_PROTOTYPES - Success
+-- Performing Test LD_FLAG_WL_Z_NOEXECSTACK
+-- Performing Test LD_FLAG_WL_Z_NOEXECSTACK - Success
+-- Performing Test C_FLAG_QUNUSED_ARGUMENTS
+-- Performing Test C_FLAG_QUNUSED_ARGUMENTS - Failed
+-- Performing Test CXX_FLAG_QUNUSED_ARGUMENTS
+-- Performing Test CXX_FLAG_QUNUSED_ARGUMENTS - Failed
+-- Performing Test C_FLAG_WA_NOEXECSTACK
+-- Performing Test C_FLAG_WA_NOEXECSTACK - Success
+-- Performing Test CXX_FLAG_WA_NOEXECSTACK
+-- Performing Test CXX_FLAG_WA_NOEXECSTACK - Success
+-- CMAKE_INSTALL_PREFIX: /usr/local
+-- CMAKE_INSTALL_LIBDIR: lib
+-- ZSTD_LEGACY_SUPPORT not defined!
+-- ZSTD_MULTITHREAD_SUPPORT is enabled
+-- CPM: Adding package xxHash@0.8.2 (bbb27a5efb85b92a0486cf361a8635715a53f6ba)
+CMake Deprecation Warning at builddir/_deps/xxhash-src/cmake_unofficial/CMakeLists.txt:8 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- xxHash build type: Release
+-- Architecture: x86_64
+-- CPM: Adding package magic_enum@0.9.6 (dd6a39d0ba1852cf06907e0f0573a2a10d23c2ad)
+-- CPM: Adding package fmt@11.2.0 (40626af88bd7df9a5fb80be7b25ac85b122d6c21)
+-- {fmt} version: 11.2.0
+-- Build type: Release
+-- CPM: Adding package fast_float@6.1.6 (00c8c7b0d5c722d2212568d915a39ea73b08b973)
+-- Tests are disabled. Set FASTFLOAT_TEST to ON to run tests.
+-- CPM: Adding package scnlib@4.0.1 (e937be1a52588621b406d58ce8614f96bb5de747)
+-- Target FastFloat::fast_float already defined, not doing find_package(FastFloat)
+-- CPM: Adding package spdlog@1.15.3 (6fa36017cfd5731d617e1a934f0e5ea9c4445b13)
+-- Build spdlog: 1.15.3
+-- Build type: Release
+-- Looking for fwrite_unlocked
+-- Looking for fwrite_unlocked - found
+-- CPM: Adding package Boost@1.88.0 (199ef13d6034c85232431130142159af3adfce22)
+-- Boost: Release build, static libraries, MPI OFF, Python OFF, testing OFF
+-- CPM: Adding package gsl-lite@1.0.1 (56dab5ce071c4ca17d3e0dbbda9a94bd5a1cbca1)
+-- Project 'gsl-lite', version: '1.0.1'
+-- CPM: Adding package type_safe@0.2.4 (1dbea7936a1e389caa692d01bb3f5ba4b6da7d82)
+-- Using vendored debug_assert
+CMake Deprecation Warning at builddir/_deps/type_safe-src/external/debug_assert/CMakeLists.txt:5 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- arithmetic_policy_default is undefined_behavior_arithmetic
+-- CPM: Adding package au@0.5.0 (4bcf0751aa235c1d50c240f71fbde616693dec87)
+-- Unit tests disabled
+-- CPM: Adding package GTest@1.16.0 (6910c9d9165801d8827d628cb72eb7ea9dd538c5)
+-- CPM: Adding package benchmark@1.9.2 (afa23b7699c17f1e26c88cbf95257b20d78d6247)
+-- Failed to find LLVM FileCheck
+-- Google Benchmark version: v1.9.2, normalized to 1.9.2
+-- Looking for shm_open in rt
+-- Looking for shm_open in rt - found
+-- Performing Test HAVE_CXX_FLAG_WALL
+-- Performing Test HAVE_CXX_FLAG_WALL - Success
+-- Performing Test HAVE_CXX_FLAG_WEXTRA
+-- Performing Test HAVE_CXX_FLAG_WEXTRA - Success
+-- Performing Test HAVE_CXX_FLAG_WSHADOW
+-- Performing Test HAVE_CXX_FLAG_WSHADOW - Success
+-- Performing Test HAVE_CXX_FLAG_WFLOAT_EQUAL
+-- Performing Test HAVE_CXX_FLAG_WFLOAT_EQUAL - Success
+-- Performing Test HAVE_CXX_FLAG_WOLD_STYLE_CAST
+-- Performing Test HAVE_CXX_FLAG_WOLD_STYLE_CAST - Success
+-- Performing Test HAVE_CXX_FLAG_WCONVERSION
+-- Performing Test HAVE_CXX_FLAG_WCONVERSION - Success
+-- Performing Test HAVE_CXX_FLAG_WERROR
+-- Performing Test HAVE_CXX_FLAG_WERROR - Success
+-- Performing Test HAVE_CXX_FLAG_WSUGGEST_OVERRIDE
+-- Performing Test HAVE_CXX_FLAG_WSUGGEST_OVERRIDE - Success
+-- Performing Test HAVE_CXX_FLAG_PEDANTIC
+-- Performing Test HAVE_CXX_FLAG_PEDANTIC - Success
+-- Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS
+-- Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS - Success
+-- Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32
+-- Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32 - Failed
+-- Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING
+-- Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING - Success
+-- Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS
+-- Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS - Success
+-- Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED
+-- Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED - Success
+-- Performing Test HAVE_CXX_FLAG_WSTRICT_ALIASING
+-- Performing Test HAVE_CXX_FLAG_WSTRICT_ALIASING - Success
+-- Performing Test HAVE_CXX_FLAG_WD654
+-- Performing Test HAVE_CXX_FLAG_WD654 - Failed
+-- Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY
+-- Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY - Failed
+-- Performing Test HAVE_CXX_FLAG_COVERAGE
+-- Performing Test HAVE_CXX_FLAG_COVERAGE - Success
+-- Compiling and running to test HAVE_STD_REGEX
+-- Performing Test HAVE_STD_REGEX -- success
+-- Compiling and running to test HAVE_GNU_POSIX_REGEX
+-- Performing Test HAVE_GNU_POSIX_REGEX -- failed to compile
+-- Compiling and running to test HAVE_POSIX_REGEX
+-- Performing Test HAVE_POSIX_REGEX -- success
+-- Compiling and running to test HAVE_STEADY_CLOCK
+-- Performing Test HAVE_STEADY_CLOCK -- success
+-- Compiling and running to test HAVE_PTHREAD_AFFINITY
+-- Performing Test HAVE_PTHREAD_AFFINITY -- success
+-- CPM: Adding package tbb@2022.2.0 (fe153f04aebb223d500f27bc3f93374a012273ec)
+CMake Warning at builddir/_deps/tbb-src/CMakeLists.txt:160 (message):
+  You are building oneTBB as a static library.  This is highly discouraged
+  and such configuration is not supported.  Consider building a dynamic
+  library to avoid unforeseen issues.
+
+
+-- Checking for one of the modules 'hwloc'
+-- Looking for getcontext
+-- Looking for getcontext - found
+-- GNU Assembler version: 2.42  (2042)
+-- TBBBind build targets are disabled due to unsupported environment
+-- CPM: Adding package farbot@0.1 (2a2bd99eefada6c78dff04bc0692912366952a86)
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+itstool not found, not merging translations for appdata XML
+qmldir file not found at "/home/burningredfog/DAW_Audio_all/zrythm/builddir/src/ZrythmGui"
+-- Found Doxygen: /usr/bin/doxygen (found version "1.9.8") found components: doxygen missing components: dot
+-- Configuring done (592.7s)
+CMake Warning (dev) at builddir/_deps/mbedtls-src/3rdparty/everest/CMakeLists.txt:3 (add_library):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target 'everest'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at builddir/_deps/mbedtls-src/3rdparty/p256-m/CMakeLists.txt:3 (add_library):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target 'p256m'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at builddir/_deps/mbedtls-src/library/CMakeLists.txt:279 (add_library):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+  'mbedcrypto'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at builddir/_deps/mbedtls-src/library/CMakeLists.txt:291 (add_library):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+  'mbedx509'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at builddir/_deps/mbedtls-src/library/CMakeLists.txt:295 (add_library):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target 'mbedtls'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at ext/soxr/src/CMakeLists.txt:79 (add_library):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target 'soxr'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at ext/soxr/src/CMakeLists.txt:104 (add_library):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+  'soxr-lsr'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at ext/soxr/examples/CMakeLists.txt:24 (add_executable):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+  '3-options-input-fn'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at ext/soxr/examples/CMakeLists.txt:24 (add_executable):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+  '1-single-block'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at ext/soxr/examples/CMakeLists.txt:24 (add_executable):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+  '2-stream'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at ext/soxr/examples/CMakeLists.txt:24 (add_executable):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+  '4-split-channels'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at ext/soxr/examples/CMakeLists.txt:24 (add_executable):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+  '5-variable-rate'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at ext/soxr/examples/CMakeLists.txt:24 (add_executable):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target '1a-lsr'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at builddir/_deps/sndfile-src/CMakeLists.txt:259 (add_library):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target 'sndfile'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at builddir/_deps/sndfile-src/CMakeLists.txt:540 (add_executable):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+  'sndfile-info'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at builddir/_deps/sndfile-src/CMakeLists.txt:553 (add_executable):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+  'sndfile-play'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at builddir/_deps/sndfile-src/CMakeLists.txt:579 (add_executable):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+  'sndfile-convert'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at builddir/_deps/sndfile-src/CMakeLists.txt:588 (add_executable):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+  'sndfile-cmp'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at builddir/_deps/sndfile-src/CMakeLists.txt:603 (add_executable):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+  'sndfile-metadata-set'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at builddir/_deps/sndfile-src/CMakeLists.txt:618 (add_executable):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+  'sndfile-metadata-get'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at builddir/_deps/sndfile-src/CMakeLists.txt:633 (add_executable):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+  'sndfile-interleave'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at builddir/_deps/sndfile-src/CMakeLists.txt:642 (add_executable):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+  'sndfile-deinterleave'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at builddir/_deps/sndfile-src/CMakeLists.txt:651 (add_executable):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+  'sndfile-concat'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at builddir/_deps/sndfile-src/CMakeLists.txt:660 (add_executable):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+  'sndfile-salvage'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at builddir/_deps/xxhash-src/cmake_unofficial/CMakeLists.txt:99 (add_library):
+  Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+  enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  INTERPROCEDURAL_OPTIMIZATION property will be ignored for target 'xxhash'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Generating done (0.8s)
+-- Build files have been written to: /home/burningredfog/DAW_Audio_all/zrythm/builddir
+[0/2] Re-checking globbed directories...
+[2/1309] Generating zrythm_el.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_el.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 2891
+* Duplicate at line: 2897
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_el.qm'...
+    Generated 224 translation(s) (1 finished and 223 unfinished)
+    Ignored 346 untranslated source text(s)
+[3/1309] Generating zrythm_en_GB.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_en_GB.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 2776
+* Duplicate at line: 2782
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_en_GB.qm'...
+    Generated 190 translation(s) (1 finished and 189 unfinished)
+    Ignored 380 untranslated source text(s)
+[4/1309] Generating zrythm_af_ZA.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_af_ZA.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 2525
+* Duplicate at line: 2531
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_af_ZA.qm'...
+    Generated 78 translation(s) (1 finished and 77 unfinished)
+    Ignored 492 untranslated source text(s)
+[5/1309] Generating zrythm_en.qm
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_en.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+[6/1309] Generating zrythm_gl.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_gl.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 2811
+* Duplicate at line: 2817
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_gl.qm'...
+    Generated 198 translation(s) (1 finished and 197 unfinished)
+    Ignored 372 untranslated source text(s)
+[7/1309] Generating zrythm_fr.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_fr.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 3187
+* Duplicate at line: 3193
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_fr.qm'...
+    Generated 1902 translation(s) (1641 finished and 261 unfinished)
+    Ignored 181 untranslated source text(s)
+[8/1309] Generating zrythm_de.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_de.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 3174
+* Duplicate at line: 3180
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_de.qm'...
+    Generated 2224 translation(s) (2067 finished and 157 unfinished)
+    Ignored 149 untranslated source text(s)
+[9/1309] Generating zrythm_ca.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_ca.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 3096
+* Duplicate at line: 3102
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_ca.qm'...
+    Generated 2084 translation(s) (1782 finished and 302 unfinished)
+    Ignored 265 untranslated source text(s)
+[10/1309] Generating zrythm_es.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_es.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 2993
+* Duplicate at line: 2999
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_es.qm'...
+    Generated 1833 translation(s) (1576 finished and 257 unfinished)
+    Ignored 269 untranslated source text(s)
+[11/1309] Generating zrythm_ar.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_ar.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 2502
+* Duplicate at line: 2508
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_ar.qm'...
+    Generated 1675 translation(s) (1618 finished and 57 unfinished)
+    Ignored 512 untranslated source text(s)
+[13/1309] Generating zrythm_hi.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_hi.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 2229
+* Duplicate at line: 2235
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_hi.qm'...
+    Generated 2 translation(s) (1 finished and 1 unfinished)
+    Ignored 568 untranslated source text(s)
+[14/1309] Generating zrythm_nb_NO.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_nb_NO.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 2690
+* Duplicate at line: 2696
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_nb_NO.qm'...
+    Generated 158 translation(s) (1 finished and 157 unfinished)
+    Ignored 412 untranslated source text(s)
+[15/1309] Generating zrythm_mk.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_mk.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 3084
+* Duplicate at line: 3090
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_mk.qm'...
+    Generated 298 translation(s) (1 finished and 297 unfinished)
+    Ignored 272 untranslated source text(s)
+[16/1309] Generating zrythm_id.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_id.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 2264
+* Duplicate at line: 2270
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_id.qm'...
+    Generated 20 translation(s) (1 finished and 19 unfinished)
+    Ignored 550 untranslated source text(s)
+[17/1309] Generating zrythm_hu.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_hu.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 2983
+* Duplicate at line: 2989
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_hu.qm'...
+    Generated 2060 translation(s) (1794 finished and 266 unfinished)
+    Ignored 303 untranslated source text(s)
+[18/1309] Generating zrythm_it.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_it.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 2624
+* Duplicate at line: 2630
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_it.qm'...
+    Generated 1728 translation(s) (1576 finished and 152 unfinished)
+    Ignored 365 untranslated source text(s)
+[19/1309] Generating zrythm_pl.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_pl.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 2491
+* Duplicate at line: 2497
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_pl.qm'...
+    Generated 1639 translation(s) (1559 finished and 80 unfinished)
+    Ignored 488 untranslated source text(s)
+[20/1309] Generating zrythm_ko.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_ko.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 2838
+* Duplicate at line: 2844
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_ko.qm'...
+    Generated 2019 translation(s) (1786 finished and 233 unfinished)
+    Ignored 336 untranslated source text(s)
+[21/1309] Generating zrythm_pt.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_pt.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 3080
+* Duplicate at line: 3086
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_pt.qm'...
+    Generated 299 translation(s) (13 finished and 286 unfinished)
+    Ignored 271 untranslated source text(s)
+[22/1309] Generating zrythm_th.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_th.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 2427
+* Duplicate at line: 2433
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_th.qm'...
+    Generated 58 translation(s) (1 finished and 57 unfinished)
+    Ignored 512 untranslated source text(s)
+[23/1309] Generating zrythm_vi.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_vi.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 2344
+* Duplicate at line: 2350
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_vi.qm'...
+    Generated 29 translation(s) (1 finished and 28 unfinished)
+    Ignored 541 untranslated source text(s)
+[24/1309] Generating zrythm_pt_BR.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_pt_BR.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 3072
+* Duplicate at line: 3078
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_pt_BR.qm'...
+    Generated 2077 translation(s) (1795 finished and 282 unfinished)
+    Ignored 287 untranslated source text(s)
+[25/1309] Generating zrythm_tr.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_tr.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 3304
+* Duplicate at line: 3310
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_tr.qm'...
+    Generated 2691 translation(s) (2586 finished and 105 unfinished)
+    Ignored 128 untranslated source text(s)
+[26/1309] Generating zrythm_uk.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_uk.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 3304
+* Duplicate at line: 3310
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_uk.qm'...
+    Generated 1979 translation(s) (1866 finished and 113 unfinished)
+    Ignored 120 untranslated source text(s)
+[28/1309] Generating zrythm_sv.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_sv.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 3011
+* Duplicate at line: 3017
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_sv.qm'...
+    Generated 2050 translation(s) (1791 finished and 259 unfinished)
+    Ignored 310 untranslated source text(s)
+[30/1309] Generating zrythm_nl.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_nl.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 2233
+* Duplicate at line: 2239
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_nl.qm'...
+    Generated 1783 translation(s) (1773 finished and 10 unfinished)
+    Ignored 559 untranslated source text(s)
+[31/1309] Generating zrythm_he.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_he.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 2430
+* Duplicate at line: 2436
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_he.qm'...
+    Generated 1564 translation(s) (1531 finished and 33 unfinished)
+    Ignored 536 untranslated source text(s)
+[32/1309] Generating zrythm_fa.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_fa.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 2494
+* Duplicate at line: 2500
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_fa.qm'...
+    Generated 1542 translation(s) (1507 finished and 35 unfinished)
+    Ignored 534 untranslated source text(s)
+[33/1309] Generating zrythm_ja.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_ja.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 3073
+* Duplicate at line: 3079
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_ja.qm'...
+    Generated 1831 translation(s) (1559 finished and 272 unfinished)
+    Ignored 267 untranslated source text(s)
+[34/1309] Generating zrythm_ru.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_ru.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 3131
+* Duplicate at line: 3137
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_ru.qm'...
+    Generated 2175 translation(s) (1952 finished and 223 unfinished)
+    Ignored 181 untranslated source text(s)
+[36/1309] Generating zrythm_zh_CN.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_zh_CN.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 3219
+* Duplicate at line: 3225
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_zh_CN.qm'...
+    Generated 2231 translation(s) (2112 finished and 119 unfinished)
+    Ignored 125 untranslated source text(s)
+[37/1309] Generating zrythm_zh_TW.qm
+Warning: dropping duplicate messages in '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_zh_TW.qm':
+
+* Context: S:
+* Source:
+* Comment: Home directory
+* Line in .ts file: 2743
+* Duplicate at line: 2749
+
+Updating '/home/burningredfog/DAW_Audio_all/zrythm/builddir/zrythm_zh_TW.qm'...
+    Generated 1849 translation(s) (1645 finished and 204 unfinished)
+    Ignored 345 untranslated source text(s)
+[346/1309] Building C object ext/midilib/CMakeFiles/midilib.dir/src/midifile.c.o
+/home/burningredfog/DAW_Audio_all/zrythm/ext/midilib/src/midifile.c: In function ‘midiFileOpen’:
+/home/burningredfog/DAW_Audio_all/zrythm/ext/midilib/src/midifile.c:374:39: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  374 |                                 (void)fread(pMF->ptr, sizeof(BYTE), size, fp);
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[455/1309] Generating desktop file
+/usr/bin/msgfmt: /home/burningredfog/DAW_Audio_all/zrythm/po/LINGUAS does not exist
+[752/1309] Automatic QML type registration for target zrythm_dsp_lib
+Warning: fader.h:20: basic_enum_base_type_t is used as enum type but cannot be found.
+Warning: musical_scale.h:21: std::uint8_t is used as enum type but cannot be found.
+Warning: tempo_map_qml_adapter.h:16: std::uint8_t is used as enum type but cannot be found.
+Warning: chord_descriptor.h:10: std::uint8_t is used as enum type but cannot be found.
+Warning: chord_descriptor.h:10: std::uint8_t is used as enum type but cannot be found.
+Warning: chord_descriptor.h:10: std::uint8_t is used as enum type but cannot be found.
+[762/1309] Building CXX object src/dsp/CMakeFiles/zrythm_dsp_lib.dir/chord_descriptor.cpp.o
+/home/burningredfog/DAW_Audio_all/zrythm/src/dsp/chord_descriptor.cpp: In instantiation of ‘void zrythm::dsp::invert_chord(auto:173&, int) [with auto:173 = std::array<bool, 48>]’:
+/home/burningredfog/DAW_Audio_all/zrythm/src/dsp/chord_descriptor.cpp:160:16:   required from here
+/home/burningredfog/DAW_Audio_all/zrythm/src/dsp/chord_descriptor.cpp:36:23: warning: unused variable ‘_’ [-Wunused-variable]
+   36 |       for (const auto _ : std::views::iota (0, -inversion))
+      |                       ^
+[777/1309] Building CXX object src/dsp/CMakeFiles/zrythm_dsp_lib.dir/graph_scheduler.cpp.o
+/home/burningredfog/DAW_Audio_all/zrythm/src/dsp/graph_scheduler.cpp: In member function ‘void zrythm::dsp::graph::GraphScheduler::terminate_threads()’:
+/home/burningredfog/DAW_Audio_all/zrythm/src/dsp/graph_scheduler.cpp:238:19: warning: unused variable ‘_’ [-Wunused-variable]
+  238 |   for (const auto _ : std::views::iota (0, tc))
+      |                   ^
+[812/1309] Automatic QML type registration for target zrythm_plugins_lib
+Warning: plugin.h:26: std::uint8_t is used as enum type but cannot be found.
+Warning: plugin_group.h:45: std::uint8_t is used as enum type but cannot be found.
+Warning: plugin_group.h:45: std::uint8_t is used as enum type but cannot be found.
+Warning: plugin_protocol.h:14: std::uint8_t is used as enum type but cannot be found.
+[819/1309] Automatic QML type registration for target zrythm_arrangement_lib
+Warning: arranger_object.h:30: basic_enum_base_type_t is used as enum type but cannot be found.
+Warning: marker.h:15: std::uint8_t is used as enum type but cannot be found.
+[890/1309] Automatic QML type registration for target zrythm_structure_tracks_lib
+Warning: automation_track.h:21: basic_enum_base_type_t is used as enum type but cannot be found.
+Warning: automation_track.h:21: basic_enum_base_type_t is used as enum type but cannot be found.
+Warning: track.h:53: basic_enum_base_type_t is used as enum type but cannot be found.
+[902/1309] Building CXX object src/structure/tracks/CMakeFiles/zrythm_structure_tracks_lib.dir/automation_tracklist.cpp.o
+/home/burningredfog/DAW_Audio_all/zrythm/src/structure/tracks/automation_tracklist.cpp: In member function ‘void zrythm::structure::tracks::AutomationTracklist::set_automation_track_index(zrythm::structure::tracks::AutomationTrack&, int, bool)’:
+/home/burningredfog/DAW_Audio_all/zrythm/src/structure/tracks/automation_tracklist.cpp:172:23: warning: type qualifiers ignored on cast result type [-Wignored-qualifiers]
+  172 |       const auto to = static_cast<decltype (from)> (index);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[920/1309] Building CXX object src/structure/tracks/CMakeFiles/zrythm_structure_tracks_lib.dir/track_collection.cpp.o
+/home/burningredfog/DAW_Audio_all/zrythm/src/structure/tracks/track_collection.cpp: In member function ‘void zrythm::structure::tracks::TrackCollection::move_track(const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&, int)’:
+/home/burningredfog/DAW_Audio_all/zrythm/src/structure/tracks/track_collection.cpp:259:35: warning: type qualifiers ignored on cast result type [-Wignored-qualifiers]
+  259 |         auto i = track_index; i > static_cast<decltype (track_index)> (pos); i--)
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/burningredfog/DAW_Audio_all/zrythm/src/structure/tracks/track_collection.cpp:268:35: warning: type qualifiers ignored on cast result type [-Wignored-qualifiers]
+  268 |         auto i = track_index; i < static_cast<decltype (track_index)> (pos); i++)
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[997/1309] Building CXX object src/undo/CMakeFiles/zrythm_undo_lib.dir/undo_stack.cpp.o
+/home/burningredfog/DAW_Audio_all/zrythm/src/undo/undo_stack.cpp: In member function ‘void zrythm::undo::UndoStack::setIndex(int)’:
+/home/burningredfog/DAW_Audio_all/zrythm/src/undo/undo_stack.cpp:187:23: warning: unused variable ‘_’ [-Wunused-variable]
+  187 |       for (const auto _ : std::views::iota (0, num_actions_to_redo))
+      |                       ^
+/home/burningredfog/DAW_Audio_all/zrythm/src/undo/undo_stack.cpp:195:23: warning: unused variable ‘_’ [-Wunused-variable]
+  195 |       for (const auto _ : std::views::iota (0, num_actions_to_undo))
+      |                       ^
+[1013/1309] Building CXX object src/actions/CMakeFiles/zrythm_actions_lib.dir/track_creator.cpp.o
+FAILED: src/actions/CMakeFiles/zrythm_actions_lib.dir/track_creator.cpp.o
+/usr/bin/c++ -DBOOST_CONTAINER_NO_LIB -DBOOST_CONTAINER_STATIC_LINK -DHAVE_LITTLE_ENDIAN=1 -DJSON_USE_IMPLICIT_CONVERSIONS=0 -DJUCE_DEBUG=0 -DJUCE_DISABLE_JUCE_VERSION_PRINTING=1 -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODAL_LOOPS_PERMITTED=1 -DJUCE_PLUGINHOST_AU=1 -DJUCE_PLUGINHOST_LADSPA=1 -DJUCE_PLUGINHOST_LV2=1 -DJUCE_PLUGINHOST_VST3=1 -DJUCE_USE_MP3AUDIOFORMAT=1 -DJUCE_WEB_BROWSER=0 -DNDEBUG=1 -DQT_CONCURRENT_LIB -DQT_CORE_LIB -DQT_ENABLE_STRICT_MODE_UP_TO=0x060900 -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DSPDLOG_ACTIVE_LEVEL=SPDLOG_LEVEL_TRACE -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_FUNCTION=__PRETTY_FUNCTION__ -DTYPE_SAFE_ARITHMETIC_POLICY=1 -DTYPE_SAFE_ENABLE_ASSERTIONS=0 -DTYPE_SAFE_ENABLE_PRECONDITION_CHECKS=1 -DTYPE_SAFE_ENABLE_WRAPPER=1 -D_NDEBUG=1 -I/home/burningredfog/DAW_Audio_all/zrythm/builddir/src/actions/zrythm_actions_lib_autogen/include -I/home/burningredfog/DAW_Audio_all/zrythm/src/actions/.. -I/home/burningredfog/DAW_Audio_all/zrythm/src/actions -I/home/burningredfog/DAW_Audio_all/zrythm/ext/rubberband -I/home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/juce-src/modules -I/home/burningredfog/DAW_Audio_all/zrythm/ext/ladspa -I/home/burningredfog/DAW_Audio_all/zrythm/ext/kissfft -I/home/burningredfog/DAW_Audio_all/zrythm/src/commands/.. -I/home/burningredfog/DAW_Audio_all/zrythm/src/structure/project/../.. -I/home/burningredfog/DAW_Audio_all/zrythm/src/structure/arrangement/../.. -I/home/burningredfog/DAW_Audio_all/zrythm/src/dsp/.. -I/home/burningredfog/DAW_Audio_all/zrythm/src/utils/.. -I/home/burningredfog/DAW_Audio_all/zrythm/src -I/home/burningredfog/DAW_Audio_all/zrythm/builddir/src -I/home/burningredfog/DAW_Audio_all/zrythm/src/plugins/.. -isystem /home/burningredfog/.local/Qt/6.10.1/gcc_64/include/QtQml -isystem /home/burningredfog/.local/Qt/6.10.1/gcc_64/include -isystem /home/burningredfog/.local/Qt/6.10.1/gcc_64/include/QtCore -isystem /home/burningredfog/.local/Qt/6.10.1/gcc_64/mkspecs/linux-g++ -isystem /home/burningredfog/.local/Qt/6.10.1/gcc_64/include/QtQmlIntegration -isystem /home/burningredfog/.local/Qt/6.10.1/gcc_64/include/QtNetwork -isystem /home/burningredfog/DAW_Audio_all/zrythm/ext/zita-resampler -isystem /home/burningredfog/DAW_Audio_all/zrythm/ext/soxr/src -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/zstd-src/build/cmake/../../lib -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/xxhash-src/cmake_unofficial/.. -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/nlohmann_json-src/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/magic_enum-src/include/magic_enum -isystem /home/burningredfog/DAW_Audio_all/zrythm/ext/backward-cpp -isystem /home/burningredfog/DAW_Audio_all/zrythm/ext/crill/.. -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/fmt-src/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/scnlib-src/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/spdlog-src/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/type_safe-src/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/type_safe-src/external/debug_assert -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/describe/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/mp11/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/stl_interfaces/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/assert/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/config/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/container/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/intrusive/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/move/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/unordered/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/container_hash/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/core/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/static_assert/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/throw_exception/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/predef/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/multi_index/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/bind/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/integer/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/type_traits/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/iterator/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/concept_check/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/preprocessor/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/detail/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/fusion/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/function_types/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/mpl/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/utility/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/io/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/tuple/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/typeof/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/functional/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/function/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/optional/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/boost-src/libs/smart_ptr/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/gsl-lite-src/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/clap-helpers-src/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/clap-src/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/tbb-src/src/tbb/../../include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/farbot-src/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/au-src -isystem /home/burningredfog/.local/Qt/6.10.1/gcc_64/include/QtGui -isystem /home/burningredfog/.local/Qt/6.10.1/gcc_64/include/QtWidgets -isystem /home/burningredfog/.local/Qt/6.10.1/gcc_64/include/QtQuick -isystem /home/burningredfog/.local/Qt/6.10.1/gcc_64/include/QtOpenGL -isystem /home/burningredfog/.local/Qt/6.10.1/gcc_64/include/QtQuickControls2 -isystem /home/burningredfog/.local/Qt/6.10.1/gcc_64/include/QtConcurrent -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/gtest-src/googletest/include -isystem /home/burningredfog/DAW_Audio_all/zrythm/builddir/_deps/gtest-src/googletest -isystem /home/burningredfog/DAW_Audio_all/zrythm/ext/moodycamel/.. -O3 -DNDEBUG -std=c++23 -flto=auto -fno-fat-lto-objects -fPIC -O3 -flto -DSCN_REGEX_BACKEND=0 -fPIC -ffunction-sections -fdata-sections -ffast-math -freciprocal-math -funroll-loops -fprefetch-loop-arrays -Wall -Wextra -Wformat=2 -Wno-missing-field-initializers -Wno-unused-parameter -Wno-cast-function-type -Wno-attributes -Winvalid-pch -include /home/burningredfog/DAW_Audio_all/zrythm/builddir/src/actions/CMakeFiles/zrythm_actions_lib.dir/cmake_pch.hxx -MD -MT src/actions/CMakeFiles/zrythm_actions_lib.dir/track_creator.cpp.o -MF src/actions/CMakeFiles/zrythm_actions_lib.dir/track_creator.cpp.o.d -o src/actions/CMakeFiles/zrythm_actions_lib.dir/track_creator.cpp.o -c /home/burningredfog/DAW_Audio_all/zrythm/src/actions/track_creator.cpp
+In file included from /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:33,
+                 from /usr/include/c++/13/bits/allocator.h:46,
+                 from /usr/include/c++/13/string:43,
+                 from /usr/include/c++/13/stdexcept:39,
+                 from /home/burningredfog/DAW_Audio_all/zrythm/src/actions/track_operator.h:6,
+                 from /home/burningredfog/DAW_Audio_all/zrythm/builddir/src/actions/CMakeFiles/zrythm_actions_lib.dir/cmake_pch.hxx:5,
+                 from <command-line>:
+/usr/include/c++/13/bits/new_allocator.h: In instantiation of ‘class std::__new_allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>’:
+/usr/include/c++/13/bits/allocator.h:130:11:   required from ‘class std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>’
+/usr/include/c++/13/bits/stl_vector.h:88:21:   required from ‘struct std::_Vector_base<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&, std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&> >’
+/usr/include/c++/13/bits/stl_vector.h:428:11:   required from ‘class std::vector<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>’
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/track_creator.cpp:63:27:   required from here
+/usr/include/c++/13/bits/new_allocator.h:126:7: error: forming pointer to reference type ‘const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&’
+  126 |       allocate(size_type __n, const void* = static_cast<const void*>(0))
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/new_allocator.h:156:7: error: forming pointer to reference type ‘const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&’
+  156 |       deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
+      |       ^~~~~~~~~~
+/usr/include/c++/13/bits/allocator.h: In instantiation of ‘class std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>’:
+/usr/include/c++/13/bits/stl_vector.h:88:21:   required from ‘struct std::_Vector_base<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&, std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&> >’
+/usr/include/c++/13/bits/stl_vector.h:428:11:   required from ‘class std::vector<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>’
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/track_creator.cpp:63:27:   required from here
+/usr/include/c++/13/bits/allocator.h:189:7: error: forming pointer to reference type ‘const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&’
+  189 |       allocate(size_t __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/allocator.h:203:7: error: forming pointer to reference type ‘const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&’
+  203 |       deallocate(_Tp* __p, size_t __n)
+      |       ^~~~~~~~~~
+In file included from /usr/include/c++/13/ext/alloc_traits.h:34,
+                 from /usr/include/c++/13/bits/basic_string.h:39,
+                 from /usr/include/c++/13/string:54:
+/usr/include/c++/13/bits/alloc_traits.h: In instantiation of ‘struct std::allocator_traits<std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&> >’:
+/usr/include/c++/13/ext/alloc_traits.h:45:10:   required from ‘struct __gnu_cxx::__alloc_traits<std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>, const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>’
+/usr/include/c++/13/bits/stl_vector.h:88:21:   required from ‘struct std::_Vector_base<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&, std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&> >’
+/usr/include/c++/13/bits/stl_vector.h:428:11:   required from ‘class std::vector<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>’
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/track_creator.cpp:63:27:   required from here
+/usr/include/c++/13/bits/alloc_traits.h:437:13: error: forming pointer to reference type ‘const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&’
+  437 |       using pointer = _Tp*;
+      |             ^~~~~~~
+/usr/include/c++/13/bits/alloc_traits.h:440:13: error: forming pointer to reference type ‘const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&’
+  440 |       using const_pointer = const _Tp*;
+      |             ^~~~~~~~~~~~~
+/usr/include/c++/13/ext/alloc_traits.h: In instantiation of ‘struct __gnu_cxx::__alloc_traits<std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>, const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>’:
+/usr/include/c++/13/bits/stl_vector.h:88:21:   required from ‘struct std::_Vector_base<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&, std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&> >’
+/usr/include/c++/13/bits/stl_vector.h:428:11:   required from ‘class std::vector<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>’
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/track_creator.cpp:63:27:   required from here
+/usr/include/c++/13/ext/alloc_traits.h:61:23: error: ‘allocate’ has not been declared in ‘__gnu_cxx::__alloc_traits<std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>, const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>::_Base_type’
+   61 |     using _Base_type::allocate;
+      |                       ^~~~~~~~
+/usr/include/c++/13/ext/alloc_traits.h:62:23: error: ‘deallocate’ has not been declared in ‘__gnu_cxx::__alloc_traits<std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>, const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>::_Base_type’
+   62 |     using _Base_type::deallocate;
+      |                       ^~~~~~~~~~
+In file included from /usr/include/c++/13/vector:66,
+                 from /usr/include/c++/13/chrono:47,
+                 from /home/burningredfog/DAW_Audio_all/zrythm/src/actions/../utils/types.h:8,
+                 from /home/burningredfog/DAW_Audio_all/zrythm/src/actions/../dsp/itransport.h:8,
+                 from /home/burningredfog/DAW_Audio_all/zrythm/src/actions/../dsp/graph_node.h:31,
+                 from /home/burningredfog/DAW_Audio_all/zrythm/src/actions/../dsp/modulator_macro_processor.h:6,
+                 from /home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/tracks/track.h:6,
+                 from /home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/tracks/audio_bus_track.h:6,
+                 from /home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/tracks/track_all.h:6,
+                 from /home/burningredfog/DAW_Audio_all/zrythm/src/actions/track_operator.h:8:
+/usr/include/c++/13/bits/stl_vector.h: In instantiation of ‘class std::vector<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>’:
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/track_creator.cpp:63:27:   required from here
+/usr/include/c++/13/bits/stl_vector.h:518:20: error: ‘_M_allocate’ has not been declared in ‘std::vector<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>::_Base’
+  518 |       using _Base::_M_allocate;
+      |                    ^~~~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:519:20: error: ‘_M_deallocate’ has not been declared in ‘std::vector<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>::_Base’
+  519 |       using _Base::_M_deallocate;
+      |                    ^~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1260:7: error: forming pointer to reference type ‘const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&’
+ 1260 |       data() _GLIBCXX_NOEXCEPT
+      |       ^~~~
+/usr/include/c++/13/bits/stl_vector.h:1265:7: error: forming pointer to reference type ‘const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&’
+ 1265 |       data() const _GLIBCXX_NOEXCEPT
+      |       ^~~~
+/usr/include/c++/13/bits/stl_vector.h:1298:7: error: ‘constexpr void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&; _Alloc = std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>; value_type = const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&]’ cannot be overloaded with ‘constexpr void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&; _Alloc = std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>; value_type = const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&]’
+ 1298 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note: previous declaration ‘constexpr void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&; _Alloc = std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>; value_type = const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&]’
+ 1281 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+In file included from /usr/include/c++/13/bits/move.h:37,
+                 from /usr/include/c++/13/bits/exception_ptr.h:41,
+                 from /usr/include/c++/13/exception:164,
+                 from /usr/include/c++/13/stdexcept:38:
+/usr/include/c++/13/type_traits: In substitution of ‘template<class _ToElementType, class _FromElementType> using std::__is_array_convertible = std::is_convertible<_FromElementType (*)[], _ToElementType (*)[]> [with _ToElementType = const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&; _FromElementType = _Tp]’:
+/usr/include/c++/13/span:122:8:   required from ‘class std::span<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>’
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/track_creator.cpp:68:81:   required from here
+/usr/include/c++/13/type_traits:1459:11: error: creating array of ‘const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&’
+ 1459 |     using __is_array_convertible
+      |           ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/type_traits: In substitution of ‘template<class _ToElementType, class _FromElementType> using std::__is_array_convertible = std::is_convertible<_FromElementType (*)[], _ToElementType (*)[]> [with _ToElementType = const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&; _FromElementType = typename std::remove_reference<_Tp>::type]’:
+/usr/include/c++/13/span:125:8:   required from ‘class std::span<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>’
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/track_creator.cpp:68:81:   required from here
+/usr/include/c++/13/type_traits:1459:11: error: creating array of ‘const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&’
+In file included from /usr/include/c++/13/format:44,
+                 from /usr/include/c++/13/bits/chrono_io.h:39,
+                 from /usr/include/c++/13/chrono:3370:
+/usr/include/c++/13/span: In instantiation of ‘class std::span<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>’:
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/track_creator.cpp:68:81:   required from here
+/usr/include/c++/13/span:134:13: error: forming pointer to reference type ‘const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&’
+  134 |       using pointer                = _Type*;
+      |             ^~~~~~~
+/usr/include/c++/13/span:135:13: error: forming pointer to reference type ‘const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&’
+  135 |       using const_pointer          = const _Type*;
+      |             ^~~~~~~~~~~~~
+/usr/include/c++/13/span:138:13: error: forming pointer to reference type ‘const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&’
+  138 |       using iterator = __gnu_cxx::__normal_iterator<pointer, span>;
+      |             ^~~~~~~~
+/usr/include/c++/13/span:139:13: error: forming pointer to reference type ‘const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&’
+  139 |       using reverse_iterator       = std::reverse_iterator<iterator>;
+      |             ^~~~~~~~~~~~~~~~
+/usr/include/c++/13/span:141:13: error: forming pointer to reference type ‘const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&’
+  141 |       using const_iterator         = std::const_iterator<iterator>;
+      |             ^~~~~~~~~~~~~~
+/usr/include/c++/13/span:142:13: error: forming pointer to reference type ‘const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&’
+  142 |       using const_reverse_iterator = std::const_iterator<reverse_iterator>;
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/span:189:9: error: creating array of ‘std::type_identity_t<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>’ {aka ‘const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&’}
+  189 |         span(type_identity_t<element_type> (&__arr)[_ArrayExtent]) noexcept
+      |         ^~~~
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/track_creator.cpp: In lambda function:
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/track_creator.cpp:68:81: error: no matching function for call to ‘std::span<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>::span(std::vector<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>&)’
+   68 |     return !structure::tracks::TrackSpan{ std::span<UuidType>(track_ids_to_check) }
+      |                                                                                 ^
+/usr/include/c++/13/span:235:9: note: candidate: ‘template<class _OType, long unsigned int _OExtent>  requires (_Extent == std::dynamic_extent || _OExtent == std::dynamic_extent || _Extent == _OExtent) && (std::__is_array_convertible<_Type, _Tp>::value) constexpr std::span<_Type, _Extent>::span(const std::span<_OType, _OExtent>&) [with long unsigned int _OExtent = _OType; _Type = const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&; long unsigned int _Extent = 18446744073709551615]’
+  235 |         span(const span<_OType, _OExtent>& __s) noexcept
+      |         ^~~~
+/usr/include/c++/13/span:235:9: note:   template argument deduction/substitution failed:
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/track_creator.cpp:68:81: note:   ‘std::vector<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>’ is not derived from ‘const std::span<_Tp, _Num>’
+   68 |     return !structure::tracks::TrackSpan{ std::span<UuidType>(track_ids_to_check) }
+      |                                                                                 ^
+/usr/include/c++/13/span:215:9: note: candidate: ‘template<class _Range>  requires !(__is_span<typename std::remove_cvref<_It2>::type>) && !(__is_std_array<typename std::remove_cvref<_It2>::type>) && !(is_array_v<typename std::remove_cvref<_It2>::type>) && (contiguous_range<_Range>) && (sized_range<_Range>) && ((borrowed_range<_Range>) || (is_const_v<element_type>)) && (std::__is_compatible_ref<decltype(*(declval<decltype(std::ranges::__cust_access::__begin((declval<_Range&>)()))&>)())>::value) constexpr std::span<_Type, _Extent>::span(_Range&&) [with _Type = const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&; long unsigned int _Extent = 18446744073709551615]’
+  215 |         span(_Range&& __range)
+      |         ^~~~
+/usr/include/c++/13/span:215:9: note:   template argument deduction/substitution failed:
+/usr/include/c++/13/span:215:9: note: constraints not satisfied
+In file included from /usr/include/c++/13/string_view:48,
+                 from /usr/include/c++/13/bits/basic_string.h:47:
+/usr/include/c++/13/bits/ranges_base.h: In substitution of ‘template<class _Range>  requires !(__is_span<typename std::remove_cvref<_It2>::type>) && !(__is_std_array<typename std::remove_cvref<_It2>::type>) && !(is_array_v<typename std::remove_cvref<_It2>::type>) && (contiguous_range<_Range>) && (sized_range<_Range>) && ((borrowed_range<_Range>) || (is_const_v<element_type>)) && (std::__is_compatible_ref<decltype(*(declval<decltype(std::ranges::__cust_access::__begin((declval<_Range&>)()))&>)())>::value) constexpr std::span<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>::span(_Range&&) [with _Range = const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&]’:
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/track_creator.cpp:68:81:   required from here
+/usr/include/c++/13/bits/ranges_base.h:501:13:   required for the satisfaction of ‘range<_Tp>’ [with _Tp = std::vector<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&, std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&> >&]
+/usr/include/c++/13/bits/ranges_base.h:590:13:   required for the satisfaction of ‘input_range<_Tp>’ [with _Tp = std::vector<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&, std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&> >&]
+/usr/include/c++/13/bits/ranges_base.h:594:13:   required for the satisfaction of ‘forward_range<_Tp>’ [with _Tp = std::vector<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&, std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&> >&]
+/usr/include/c++/13/bits/ranges_base.h:599:13:   required for the satisfaction of ‘bidirectional_range<_Tp>’ [with _Tp = std::vector<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&, std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&> >&]
+/usr/include/c++/13/bits/ranges_base.h:604:13:   required for the satisfaction of ‘random_access_range<_Tp>’ [with _Tp = std::vector<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&, std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&> >&]
+/usr/include/c++/13/bits/ranges_base.h:609:13:   required for the satisfaction of ‘contiguous_range<_Range>’ [with _Range = std::vector<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&, std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&> >&]
+/usr/include/c++/13/bits/ranges_base.h:501:21:   in requirements with ‘_Tp& __t’ [with _Tp = std::vector<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&, std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&> >&]
+/usr/include/c++/13/bits/ranges_base.h:503:22: note: the required expression ‘std::ranges::__cust::begin(__t)’ is invalid
+  503 |         ranges::begin(__t);
+      |         ~~~~~~~~~~~~~^~~~~
+/usr/include/c++/13/bits/ranges_base.h:504:20: note: the required expression ‘std::ranges::__cust::end(__t)’ is invalid
+  504 |         ranges::end(__t);
+      |         ~~~~~~~~~~~^~~~~
+cc1plus: note: set ‘-fconcepts-diagnostics-depth=’ to at least 2 for more detail
+/usr/include/c++/13/span:203:9: note: candidate: ‘template<class _Tp, long unsigned int _ArrayExtent>  requires  std::__is_compatible_array<const _Tp, _ArrayExtent>::value constexpr std::span<_Type, _Extent>::span(const std::array<_Tp, _ArrayExtent>&) [with long unsigned int _ArrayExtent = _Tp; _Type = const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&; long unsigned int _Extent = 18446744073709551615]’
+  203 |         span(const array<_Tp, _ArrayExtent>& __arr) noexcept
+      |         ^~~~
+/usr/include/c++/13/span:203:9: note:   template argument deduction/substitution failed:
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/track_creator.cpp:68:81: note:   ‘std::vector<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>’ is not derived from ‘const std::array<_Tp, _Nm>’
+   68 |     return !structure::tracks::TrackSpan{ std::span<UuidType>(track_ids_to_check) }
+      |                                                                                 ^
+/usr/include/c++/13/span:196:9: note: candidate: ‘template<class _Tp, long unsigned int _ArrayExtent>  requires  std::__is_compatible_array<_Tp, _ArrayExtent>::value constexpr std::span<_Type, _Extent>::span(std::array<_Tp, _ArrayExtent>&) [with long unsigned int _ArrayExtent = _Tp; _Type = const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&; long unsigned int _Extent = 18446744073709551615]’
+  196 |         span(array<_Tp, _ArrayExtent>& __arr) noexcept
+      |         ^~~~
+/usr/include/c++/13/span:196:9: note:   template argument deduction/substitution failed:
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/track_creator.cpp:68:81: note:   ‘std::vector<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>’ is not derived from ‘std::array<_Tp, _Nm>’
+   68 |     return !structure::tracks::TrackSpan{ std::span<UuidType>(track_ids_to_check) }
+      |                                                                                 ^
+/usr/include/c++/13/span:174:9: note: candidate: ‘template<class _It, class _End>  requires (contiguous_iterator<_It>) && (sized_sentinel_for<_End, _It>) && ((std::__is_compatible_ref<decltype(*(declval<_Iter&>)())>::value) && !(is_convertible_v<_End, std::span<_Type, _Extent>::size_type>)) constexpr std::span<_Type, _Extent>::span(_It, _End) [with _End = _It; _Type = const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&; long unsigned int _Extent = 18446744073709551615]’
+  174 |         span(_It __first, _End __last)
+      |         ^~~~
+/usr/include/c++/13/span:174:9: note:   template argument deduction/substitution failed:
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/track_creator.cpp:68:81: note:   candidate expects 2 arguments, 1 provided
+   68 |     return !structure::tracks::TrackSpan{ std::span<UuidType>(track_ids_to_check) }
+      |                                                                                 ^
+/usr/include/c++/13/span:159:9: note: candidate: ‘template<class _It>  requires (contiguous_iterator<_It>) && (std::__is_compatible_ref<decltype(*(declval<_Iter&>)())>::value) constexpr std::span<_Type, _Extent>::span(_It, size_type) [with _Type = const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&; long unsigned int _Extent = 18446744073709551615]’
+  159 |         span(_It __first, size_type __count)
+      |         ^~~~
+/usr/include/c++/13/span:159:9: note:   template argument deduction/substitution failed:
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/track_creator.cpp:68:81: note:   candidate expects 2 arguments, 1 provided
+   68 |     return !structure::tracks::TrackSpan{ std::span<UuidType>(track_ids_to_check) }
+      |                                                                                 ^
+/usr/include/c++/13/span:227:7: note: candidate: ‘constexpr std::span<_Type, _Extent>::span(const std::span<_Type, _Extent>&) [with _Type = const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&; long unsigned int _Extent = 18446744073709551615]’
+  227 |       span(const span&) noexcept = default;
+      |       ^~~~
+/usr/include/c++/13/span:227:12: note:   no known conversion for argument 1 from ‘std::vector<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>’ to ‘const std::span<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>&’
+  227 |       span(const span&) noexcept = default;
+      |            ^~~~~~~~~~~
+/usr/include/c++/13/span:151:7: note: candidate: ‘constexpr std::span<_Type, _Extent>::span() requires  _Extent == std::dynamic_extent || _Extent == 0 [with _Type = const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&; long unsigned int _Extent = 18446744073709551615]’
+  151 |       span() noexcept
+      |       ^~~~
+/usr/include/c++/13/span:151:7: note:   candidate expects 0 arguments, 1 provided
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/track_creator.cpp:68:83: error: no matching function for call to ‘zrythm::structure::tracks::TrackSpan::TrackSpan(<brace-enclosed initializer list>)’
+   68 |     return !structure::tracks::TrackSpan{ std::span<UuidType>(track_ids_to_check) }
+      |                                                                                   ^
+In file included from /home/burningredfog/DAW_Audio_all/zrythm/src/actions/../dsp/port_fwd.h:6,
+                 from /home/burningredfog/DAW_Audio_all/zrythm/src/actions/../dsp/port_connection.h:6,
+                 from /home/burningredfog/DAW_Audio_all/zrythm/src/actions/../dsp/port.h:7,
+                 from /home/burningredfog/DAW_Audio_all/zrythm/src/actions/../dsp/audio_port.h:6,
+                 from /home/burningredfog/DAW_Audio_all/zrythm/src/actions/../dsp/parameter.h:6,
+                 from /home/burningredfog/DAW_Audio_all/zrythm/src/actions/../dsp/modulator_macro_processor.h:7:
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../utils/uuid_identifiable_object.h:782:12: note: candidate: ‘zrythm::utils::UuidIdentifiableObjectView<RegistryT>::UuidIdentifiableObjectView(std::span<const typename RegistryT::VariantType>) [with RegistryT = zrythm::utils::OwningObjectRegistry<std::variant<zrythm::structure::tracks::MarkerTrack*, zrythm::structure::tracks::InstrumentTrack*, zrythm::structure::tracks::MidiTrack*, zrythm::structure::tracks::MasterTrack*, zrythm::structure::tracks::MidiGroupTrack*, zrythm::structure::tracks::AudioGroupTrack*, zrythm::structure::tracks::FolderTrack*, zrythm::structure::tracks::MidiBusTrack*, zrythm::structure::tracks::AudioBusTrack*, zrythm::structure::tracks::AudioTrack*, zrythm::structure::tracks::ChordTrack*, zrythm::structure::tracks::ModulatorTrack*>, zrythm::structure::tracks::Track>; typename RegistryT::VariantType = std::variant<zrythm::structure::tracks::MarkerTrack*, zrythm::structure::tracks::InstrumentTrack*, zrythm::structure::tracks::MidiTrack*, zrythm::structure::tracks::MasterTrack*, zrythm::structure::tracks::MidiGroupTrack*, zrythm::structure::tracks::AudioGroupTrack*, zrythm::structure::tracks::FolderTrack*, zrythm::structure::tracks::MidiBusTrack*, zrythm::structure::tracks::AudioBusTrack*, zrythm::structure::tracks::AudioTrack*, zrythm::structure::tracks::ChordTrack*, zrythm::structure::tracks::ModulatorTrack*>]’
+  782 |   explicit UuidIdentifiableObjectView (std::span<const VariantType> objects)
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/tracks/track_collection.h:6,
+                 from /home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/scenes/clip_slot.h:7,
+                 from /home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/scenes/scene.h:7,
+                 from /home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/scenes/clip_launcher.h:6,
+                 from /home/burningredfog/DAW_Audio_all/zrythm/src/structure/project/project.h:17,
+                 from /home/burningredfog/DAW_Audio_all/zrythm/builddir/src/actions/CMakeFiles/zrythm_actions_lib.dir/cmake_pch.hxx:8:
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/tracks/track_span.h:19:15: note:   inherited here
+   19 |   using Base::Base; // Inherit constructors
+      |               ^~~~
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/tracks/track_span.h:19:15: note:   conversion of argument 1 would be ill-formed:
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../utils/uuid_identifiable_object.h:788:12: note: candidate: ‘zrythm::utils::UuidIdentifiableObjectView<RegistryT>::UuidIdentifiableObjectView(std::span<const zrythm::utils::UuidReference<RegistryT> >) [with RegistryT = zrythm::utils::OwningObjectRegistry<std::variant<zrythm::structure::tracks::MarkerTrack*, zrythm::structure::tracks::InstrumentTrack*, zrythm::structure::tracks::MidiTrack*, zrythm::structure::tracks::MasterTrack*, zrythm::structure::tracks::MidiGroupTrack*, zrythm::structure::tracks::AudioGroupTrack*, zrythm::structure::tracks::FolderTrack*, zrythm::structure::tracks::MidiBusTrack*, zrythm::structure::tracks::AudioBusTrack*, zrythm::structure::tracks::AudioTrack*, zrythm::structure::tracks::ChordTrack*, zrythm::structure::tracks::ModulatorTrack*>, zrythm::structure::tracks::Track>]’
+  788 |   explicit UuidIdentifiableObjectView (std::span<const UuidRefType> refs)
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/tracks/track_span.h:19:15: note:   inherited here
+   19 |   using Base::Base; // Inherit constructors
+      |               ^~~~
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/tracks/track_span.h:19:15: note:   conversion of argument 1 would be ill-formed:
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../utils/uuid_identifiable_object.h:794:12: note: candidate: ‘zrythm::utils::UuidIdentifiableObjectView<RegistryT>::UuidIdentifiableObjectView(const RegistryT&, std::span<const typename RegistryT::UuidType>) [with RegistryT = zrythm::utils::OwningObjectRegistry<std::variant<zrythm::structure::tracks::MarkerTrack*, zrythm::structure::tracks::InstrumentTrack*, zrythm::structure::tracks::MidiTrack*, zrythm::structure::tracks::MasterTrack*, zrythm::structure::tracks::MidiGroupTrack*, zrythm::structure::tracks::AudioGroupTrack*, zrythm::structure::tracks::FolderTrack*, zrythm::structure::tracks::MidiBusTrack*, zrythm::structure::tracks::AudioBusTrack*, zrythm::structure::tracks::AudioTrack*, zrythm::structure::tracks::ChordTrack*, zrythm::structure::tracks::ModulatorTrack*>, zrythm::structure::tracks::Track>; typename RegistryT::UuidType = zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid]’
+  794 |   explicit UuidIdentifiableObjectView (
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/tracks/track_span.h:19:15: note:   inherited here
+   19 |   using Base::Base; // Inherit constructors
+      |               ^~~~
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/tracks/track_span.h:19:15: note:   candidate expects 2 arguments, 1 provided
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../utils/uuid_identifiable_object.h:802:12: note: candidate: ‘zrythm::utils::UuidIdentifiableObjectView<RegistryT>::UuidIdentifiableObjectView(const VariantType&) [with RegistryT = zrythm::utils::OwningObjectRegistry<std::variant<zrythm::structure::tracks::MarkerTrack*, zrythm::structure::tracks::InstrumentTrack*, zrythm::structure::tracks::MidiTrack*, zrythm::structure::tracks::MasterTrack*, zrythm::structure::tracks::MidiGroupTrack*, zrythm::structure::tracks::AudioGroupTrack*, zrythm::structure::tracks::FolderTrack*, zrythm::structure::tracks::MidiBusTrack*, zrythm::structure::tracks::AudioBusTrack*, zrythm::structure::tracks::AudioTrack*, zrythm::structure::tracks::ChordTrack*, zrythm::structure::tracks::ModulatorTrack*>, zrythm::structure::tracks::Track>; VariantType = std::variant<zrythm::structure::tracks::MarkerTrack*, zrythm::structure::tracks::InstrumentTrack*, zrythm::structure::tracks::MidiTrack*, zrythm::structure::tracks::MasterTrack*, zrythm::structure::tracks::MidiGroupTrack*, zrythm::structure::tracks::AudioGroupTrack*, zrythm::structure::tracks::FolderTrack*, zrythm::structure::tracks::MidiBusTrack*, zrythm::structure::tracks::AudioBusTrack*, zrythm::structure::tracks::AudioTrack*, zrythm::structure::tracks::ChordTrack*, zrythm::structure::tracks::ModulatorTrack*>]’
+  802 |   explicit UuidIdentifiableObjectView (const VariantType &obj)
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/tracks/track_span.h:19:15: note:   inherited here
+   19 |   using Base::Base; // Inherit constructors
+      |               ^~~~
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/tracks/track_span.h:19:15: note:   conversion of argument 1 would be ill-formed:
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../utils/uuid_identifiable_object.h:596:7: note: candidate: ‘constexpr zrythm::utils::UuidIdentifiableObjectView<zrythm::utils::OwningObjectRegistry<std::variant<zrythm::structure::tracks::MarkerTrack*, zrythm::structure::tracks::InstrumentTrack*, zrythm::structure::tracks::MidiTrack*, zrythm::structure::tracks::MasterTrack*, zrythm::structure::tracks::MidiGroupTrack*, zrythm::structure::tracks::AudioGroupTrack*, zrythm::structure::tracks::FolderTrack*, zrythm::structure::tracks::MidiBusTrack*, zrythm::structure::tracks::AudioBusTrack*, zrythm::structure::tracks::AudioTrack*, zrythm::structure::tracks::ChordTrack*, zrythm::structure::tracks::ModulatorTrack*>, zrythm::structure::tracks::Track> >::UuidIdentifiableObjectView(const zrythm::utils::UuidIdentifiableObjectView<zrythm::utils::OwningObjectRegistry<std::variant<zrythm::structure::tracks::MarkerTrack*, zrythm::structure::tracks::InstrumentTrack*, zrythm::structure::tracks::MidiTrack*, zrythm::structure::tracks::MasterTrack*, zrythm::structure::tracks::MidiGroupTrack*, zrythm::structure::tracks::AudioGroupTrack*, zrythm::structure::tracks::FolderTrack*, zrythm::structure::tracks::MidiBusTrack*, zrythm::structure::tracks::AudioBusTrack*, zrythm::structure::tracks::AudioTrack*, zrythm::structure::tracks::ChordTrack*, zrythm::structure::tracks::ModulatorTrack*>, zrythm::structure::tracks::Track> >&)’
+  596 | class UuidIdentifiableObjectView
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/tracks/track_span.h:19:15: note:   inherited here
+   19 |   using Base::Base; // Inherit constructors
+      |               ^~~~
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/tracks/track_span.h:19:15: note:   an inherited constructor is not a candidate for initialization from an expression of the same or derived type
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../utils/uuid_identifiable_object.h:596:7: note: candidate: ‘constexpr zrythm::utils::UuidIdentifiableObjectView<zrythm::utils::OwningObjectRegistry<std::variant<zrythm::structure::tracks::MarkerTrack*, zrythm::structure::tracks::InstrumentTrack*, zrythm::structure::tracks::MidiTrack*, zrythm::structure::tracks::MasterTrack*, zrythm::structure::tracks::MidiGroupTrack*, zrythm::structure::tracks::AudioGroupTrack*, zrythm::structure::tracks::FolderTrack*, zrythm::structure::tracks::MidiBusTrack*, zrythm::structure::tracks::AudioBusTrack*, zrythm::structure::tracks::AudioTrack*, zrythm::structure::tracks::ChordTrack*, zrythm::structure::tracks::ModulatorTrack*>, zrythm::structure::tracks::Track> >::UuidIdentifiableObjectView(zrythm::utils::UuidIdentifiableObjectView<zrythm::utils::OwningObjectRegistry<std::variant<zrythm::structure::tracks::MarkerTrack*, zrythm::structure::tracks::InstrumentTrack*, zrythm::structure::tracks::MidiTrack*, zrythm::structure::tracks::MasterTrack*, zrythm::structure::tracks::MidiGroupTrack*, zrythm::structure::tracks::AudioGroupTrack*, zrythm::structure::tracks::FolderTrack*, zrythm::structure::tracks::MidiBusTrack*, zrythm::structure::tracks::AudioBusTrack*, zrythm::structure::tracks::AudioTrack*, zrythm::structure::tracks::ChordTrack*, zrythm::structure::tracks::ModulatorTrack*>, zrythm::structure::tracks::Track> >&&)’
+  596 | class UuidIdentifiableObjectView
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/tracks/track_span.h:19:15: note:   inherited here
+   19 |   using Base::Base; // Inherit constructors
+      |               ^~~~
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/tracks/track_span.h:19:15: note:   an inherited constructor is not a candidate for initialization from an expression of the same or derived type
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/tracks/track_span.h:13:7: note: candidate: ‘constexpr zrythm::structure::tracks::TrackSpan::TrackSpan(const zrythm::structure::tracks::TrackSpan&)’
+   13 | class TrackSpan : public utils::UuidIdentifiableObjectView<TrackRegistry>
+      |       ^~~~~~~~~
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/tracks/track_span.h:13:7: note:   conversion of argument 1 would be ill-formed:
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/tracks/track_span.h:13:7: note: candidate: ‘constexpr zrythm::structure::tracks::TrackSpan::TrackSpan(zrythm::structure::tracks::TrackSpan&&)’
+/home/burningredfog/DAW_Audio_all/zrythm/src/actions/../structure/tracks/track_span.h:13:7: note:   conversion of argument 1 would be ill-formed:
+/usr/include/c++/13/bits/stl_vector.h: In instantiation of ‘constexpr std::_Vector_base<_Tp, _Alloc>::_Vector_impl_data::_Vector_impl_data() [with _Tp = const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&; _Alloc = std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>]’:
+/usr/include/c++/13/bits/stl_vector.h:142:19:   required from ‘constexpr std::_Vector_base<_Tp, _Alloc>::_Vector_impl::_Vector_impl() requires  is_default_constructible_v<typename __gnu_cxx::__alloc_traits<_Allocator, typename _Allocator::value_type>::rebind::other> [with _Tp = const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&; _Alloc = std::allocator<const zrythm::utils::UuidIdentifiableObject<zrythm::structure::tracks::Track>::Uuid&>]’
+/usr/include/c++/13/bits/stl_vector.h:315:7:   required from here
+/usr/include/c++/13/bits/stl_vector.h:100:54: error: using invalid field ‘std::_Vector_base<_Tp, _Alloc>::_Vector_impl_data::_M_start’
+  100 |         : _M_start(), _M_finish(), _M_end_of_storage()
+      |                                                      ^
+/usr/include/c++/13/bits/stl_vector.h:100:54: error: using invalid field ‘std::_Vector_base<_Tp, _Alloc>::_Vector_impl_data::_M_finish’
+/usr/include/c++/13/bits/stl_vector.h:100:54: error: using invalid field ‘std::_Vector_base<_Tp, _Alloc>::_Vector_impl_data::_M_end_of_storage’
+[1020/1309] Building CXX object src/actions/CMakeFiles/zrythm_actions_libplugin.dir/zrythm_actions_libplugin_ZrythmActionsPlugin.cpp.o
+ninja: build stopped: subcommand failed.
+burningredfog@mike-Precision-T1700:~/DAW_Audio_all/zrythm$
+
