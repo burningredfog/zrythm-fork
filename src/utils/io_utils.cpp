@@ -354,11 +354,11 @@ copy_file (const fs::path &destfile, const fs::path &srcfile)
 std::vector<fs::path>
 get_files_in_dir_as_basenames (const fs::path &_dir)
 {
-  return get_files_in_dir (_dir)
+    auto range = get_files_in_dir (_dir)
          | std::views::transform ([] (const fs::path &path) {
-             return path_get_basename (path);
-           })
-         | std::ranges::to<std::vector> ();
+           return path_get_basename (path);
+         });
+  return std::vector<std::filesystem::path>{range.begin(), range.end()};
 }
 
 std::vector<fs::path>

@@ -390,8 +390,8 @@ public:
   {
     /* gather all markers */
     std::vector<units::precise_tick_t> marker_ticks;
-    static_assert (__cpp_lib_containers_ranges >= 202202L);
-    marker_ticks.append_range (extra_markers);
+    //static_assert (__cpp_lib_containers_ranges >= 202202L);
+    marker_ticks.insert(marker_ticks.end(), extra_markers.begin(), extra_markers.end());
     marker_ticks.emplace_back (cue_position_.get_ticks ());
     marker_ticks.emplace_back (loop_start_position_.get_ticks ());
     marker_ticks.emplace_back (loop_end_position_.get_ticks ());

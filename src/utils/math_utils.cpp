@@ -20,7 +20,7 @@ calculate_rms_amp (const audio_sample_type_t * buf, const nframes_t nframes)
       sample = buf[i];
       sum += (sample * sample);
     }
-  return std::sqrtf (
+  return std::sqrt (
     sum / ((audio_sample_type_t) nframes / (audio_sample_type_t) RMS_FRAMES));
 }
 

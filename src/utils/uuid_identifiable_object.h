@@ -494,7 +494,11 @@ public:
   {
     assert (is_main_thread ());
 
-    return objects_by_id_ | std::views::keys | std::ranges::to<std::vector> ();
+    auto keys_range = objects_by_id_ | std::views::keys;
+    std::vector<std::remove_cvref_t<decltype(*std::begin(keys_range))>> result;
+    for (const auto &id : keys_range)
+        result.push_back(id);
+    return result;
   }
 
   size_t size () const

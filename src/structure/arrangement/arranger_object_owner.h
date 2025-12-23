@@ -89,11 +89,10 @@ public:
 
   ArrangerObjectListModel * get_model () const { return list_model_.get (); }
 
-  template <typename SelfT>
   ArrangerObjectUuidReference
-  remove_object (this SelfT &self, const ArrangerObject::Uuid &id)
+  remove_object (const ArrangerObject::Uuid &id)
   {
-    auto &container = self.ArrangerObjectOwner<ChildT>::children_;
+    auto &container = children_;
     auto &random_access_idx = container.template get<random_access_index> ();
     auto  it_to_remove = std::ranges::find (
       random_access_idx, id, &ArrangerObjectUuidReference::id);
@@ -109,27 +108,24 @@ public:
       std::distance (random_access_idx.begin (), it_to_remove);
 
     // Remove from model first to handle Qt signals properly
-    self.ArrangerObjectOwner<ChildT>::list_model_->removeRows (
+    list_model_->removeRows (
       static_cast<int> (remove_idx), 1);
 
     return obj_ref;
   }
 
-  template <typename SelfT>
   void insert_object (
-    this SelfT                        &self,
     const ArrangerObjectUuidReference &obj_ref,
-    int                                idx)
+    int idx)
   {
-    self.ArrangerObjectOwner<ChildT>::list_model_->insertObject (obj_ref, idx);
+    list_model_->insertObject (obj_ref, idx);
   }
 
-  template <typename SelfT>
-  void add_object (this SelfT &self, const ArrangerObjectUuidReference &obj_ref)
+  void add_object (const ArrangerObjectUuidReference &obj_ref)
   {
-    self.ArrangerObjectOwner<ChildT>::insert_object (
+    insert_object (
       obj_ref,
-      static_cast<int> (self.ArrangerObjectOwner<ChildT>::children_.size ()));
+      static_cast<int> (children_.size ()));
   }
 
   void clear_objects () { list_model_->clear (); }

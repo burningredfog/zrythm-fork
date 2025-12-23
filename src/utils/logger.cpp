@@ -278,11 +278,11 @@ ILogger::get_last_log_entries (size_t count, bool formatted) const
   auto buffer_sink = std::dynamic_pointer_cast<
     spdlog::sinks::ringbuffer_sink_mt> (logger_->sinks ().back ());
   assert (buffer_sink);
-  return buffer_sink->last_formatted (count)
+    auto range = buffer_sink->last_formatted (count)
          | std::views::transform ([&] (const auto &entry) {
-             return Utf8String::from_utf8_encoded_string (entry);
-           })
-         | std::ranges::to<std::vector> ();
+           return Utf8String::from_utf8_encoded_string (entry);
+         });
+    return std::vector<zrythm::utils::Utf8String>{range.begin(), range.end()};
 }
 
 TestLogger::TestLogger ()

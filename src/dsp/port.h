@@ -207,17 +207,21 @@ public:
 
   auto &port_sources () const { return port_sources_; }
 
-  void set_port_sources (this auto &self, RangeOf<PortT *> auto source_ports)
-    [[clang::blocking]]
+  void set_port_sources(RangeOf<PortT *> auto source_ports)
   {
-    self.port_sources_.clear ();
-    for (const auto &source_port : source_ports)
+      port_sources_.clear();
+      for (const auto &source_port : source_ports)
       {
-        self.port_sources_.push_back (
-          std::make_pair (
-            source_port,
-            std::make_unique<dsp::PortConnection> (
-              source_port->get_uuid (), self.get_uuid (), 1.f, true, true)));
+          // Używamy UUID portu docelowego poprzez rzutowanie:
+          const auto &this_port_uuid = static_cast<const PortT *>(this)->get_uuid();
+
+          port_sources_.push_back(
+              std::make_pair(
+                  source_port,
+                  std::make_unique<dsp::PortConnection>(
+                      source_port->get_uuid(), this_port_uuid, 1.f, true, true)
+              )
+          );
       }
   }
 

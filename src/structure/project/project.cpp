@@ -166,11 +166,18 @@ Project::Project (
           *file_audio_source_registry_,
           this)),
       monitor_fader_ (monitor_fader),
-      graph_dispatcher_ (
+       graph_dispatcher_ (
         std::unique_ptr<dsp::graph::IGraphBuilder> (
           new ProjectGraphBuilder (*this)),
-        std::views::single (&audio_engine_->get_monitor_out_port ())
-          | std::ranges::to<std::vector<dsp::graph::IProcessable *>> (),
+        // -- tu była oryginalna linia z | std::ranges::to<> --
+        // std::views::single (&audio_engine_->get_monitor_out_port ())
+        //   | std::ranges::to<std::vector<dsp::graph::IProcessable *>> (),
+        // ---- zamiana na kompatybilny kod: ----
+        // Najpierw tworzysz tymczasowy range:
+        [&]{
+          auto single_range = std::views::single (&audio_engine_->get_monitor_out_port ());
+          return std::vector<dsp::graph::IProcessable *>(single_range.begin(), single_range.end());
+        }(),
         *device_manager_,
         [this] (const std::function<void ()> &callable) {
           bool engine_running = audio_engine_->running ();

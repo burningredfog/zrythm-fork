@@ -35,14 +35,12 @@ public:
    *
    * @tparam RegionType Either MidiRegion, AudioRegion, ChordRegion, or
    * AutomationRegion
-   * @param self The derived class instance (explicit this parameter)
    * @param tempo_map The tempo map for timing conversion.
    * @param regions The regions to process.
    * @param affected_range The range of ticks to process.
    */
   template <RegionObject RegionType>
   void generate_events (
-    this auto                       &self,
     const dsp::TempoMap             &tempo_map,
     RangeOf<const RegionType *> auto regions,
     utils::ExpandableTickRange       affected_range)
@@ -67,11 +65,11 @@ public:
 
     if (affected_range.is_full_content ())
       {
-        self.get_base_cache ()->clear ();
+        this->get_base_cache ()->clear ();
       }
     else
       {
-        self.get_base_cache ()->remove_sequences_matching_interval (
+        this->get_base_cache ()->remove_sequences_matching_interval (
           sample_interval);
       }
 
@@ -83,7 +81,7 @@ public:
         return region->bounds ()->is_hit_by_range (sample_interval);
       };
 
-    const auto cache_region = [&] (const auto * r) {
+    const auto cache_region = [this, &tempo_map] (const auto * r) {
       // Skip muted regions
       if (r->mute ()->muted ())
         return;
@@ -92,16 +90,16 @@ public:
         std::is_same_v<RegionType, arrangement::MidiRegion>
         || std::is_same_v<RegionType, arrangement::ChordRegion>)
         {
-          self.cache_midi_region (*r, tempo_map);
+          this->cache_midi_region (*r, tempo_map);
         }
       else if constexpr (std::is_same_v<RegionType, arrangement::AudioRegion>)
         {
-          self.cache_audio_region (*r);
+          this->cache_audio_region (*r);
         }
       else if constexpr (
         std::is_same_v<RegionType, arrangement::AutomationRegion>)
         {
-          self.cache_automation_region (*r, tempo_map);
+          this->cache_automation_region (*r, tempo_map);
         }
     };
 
@@ -111,7 +109,7 @@ public:
       cache_region);
 
     // Finalize
-    self.get_base_cache ()->finalize_changes ();
+    this->get_base_cache ()->finalize_changes ();
   }
 
   virtual void clear_all_caches () = 0;
@@ -120,6 +118,12 @@ public:
 
 protected:
   virtual dsp::TimelineDataCache * get_base_cache () = 0;
+
+  // Dummy virtual methods to allow SFINAE for generate_events templates
+  virtual void cache_midi_region(const arrangement::MidiRegion&, const dsp::TempoMap&) {}
+  virtual void cache_midi_region(const arrangement::ChordRegion&, const dsp::TempoMap&) {}
+  virtual void cache_audio_region(const arrangement::AudioRegion&) {}
+  virtual void cache_automation_region(const arrangement::AutomationRegion&, const dsp::TempoMap&) {}
 
 protected:
   /** Last transport state we've seen */

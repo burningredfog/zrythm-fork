@@ -236,7 +236,8 @@ AudioPool::write_to_disk (bool is_backup)
     }
 
   // write clips in parallel
-  const auto clips = get_clip_ptrs () | std::ranges::to<std::vector> ();
+  auto range = get_clip_ptrs();
+  std::vector<FileAudioSource*> clips{range.begin(), range.end()};
   std::vector<std::exception_ptr> exceptions;
   std::mutex                      error_mutex;
   const unsigned                  num_workers =
