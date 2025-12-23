@@ -53,18 +53,19 @@ TrackCreator::get_unique_name_for_track (
   const utils::Utf8String              &name) const
 {
   const auto name_is_unique = [&] (const utils::Utf8String &name_to_check) {
-    // Zamiana: materializujemy filtered_view i przekazujemy przez std::span do TrackSpan
+    // Materializujemy filtered_view i przekazujemy przez std::span do TrackSpan
     auto filtered_view =
       std::views::filter(track_collection_.tracks(), [&] (const auto &ref) {
         return ref.id () != track_to_skip;
       });
 
-    using UuidType = decltype(track_to_skip); // (tu dopasuj do faktycznego aliasu w projekcie)
+    using UuidType = decltype(track_to_skip);
     std::vector<UuidType> track_ids_to_check;
     for (const auto &ref : filtered_view)
       track_ids_to_check.push_back(ref.id());
 
-    return !structure::tracks::TrackSpan{ std::span<const UuidType>(track_ids_to_check) }
+    // Uwaga: używamy std::span<UuidType> (wartości, NIE referencji!)
+    return !structure::tracks::TrackSpan{ std::span<UuidType>(track_ids_to_check) }
       .contains_track_name(name_to_check);
   };
 
